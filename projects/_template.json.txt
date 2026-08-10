@@ -1,0 +1,26 @@
+{
+  "title": "Project Title",
+  "date": "2026-08-07",
+  "period": "Jan 2026 – Present",
+  "status": "active",
+  "image": "assets/projects/your-image.jpg",
+  "description": "One or two sentences on what it is and what it does. Written for someone skimming, not someone who already knows the project.",
+  "stack": ["Python", "Kafka", "Docker"],
+  "links": [
+    { "label": "repository", "url": "https://github.com/you/your-repo" },
+    { "label": "writeup", "url": "https://example.com" }
+  ]
+}
+
+// How to add a project:
+// 1. Copy this file, rename it to end in .json (e.g. jobsignal.json) — delete these two comment lines, JSON doesn't allow comments.
+// 2. Fill in the fields above. "image" is optional — omit it (or leave it out entirely) for a plain card with no photo.
+// 3. Drop any image file into assets/projects/.
+// 4. Commit and push. The index rebuilds automatically.
+//
+// Fields:
+//   status  — short tag shown top-right of the card, e.g. "active", "archived", or a year range. Optional.
+//   period  — human-readable dates shown under the status tag. Optional.
+//   date    — ISO date (or year) used only for sorting, newest first. Required.
+//   stack   — array of short tech labels, rendered as chips.
+//   links   — array of {label, url}. Optional, omit or leave empty for none.

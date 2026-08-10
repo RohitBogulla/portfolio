@@ -1,0 +1,13 @@
+{
+  "title": "Comic/Manga Page Interpretation via Vision-Language Models",
+  "date": "2025-05-01",
+  "period": "Jan 2025 – May 2025",
+  "status": "submitted to ACL 2025",
+  "description": "An end-to-end pipeline making comics and manga accessible to visually impaired readers through screen-reader integration. Developed prompt-engineering strategies for VLMs that improved page-level comprehension accuracy by 40%, and benchmarked six vision-language models (MiniCPM, Qwen 2.5, LLaVA 1.6, InstructBLIP, CogVLM, Idefics3) on hallucination metrics.",
+  "stack": ["PyTorch", "HuggingFace Transformers", "Prompt Engineering", "VLMs", "Python"],
+  "links": [
+    { "label": "repository", "url": "https://github.com/Kamehamehaaaaa/CAI6307-Second-Sight-Keystone-Project/tree/main" },
+    { "label": "paper", "url": "https://arxiv.org/pdf/2603.01950" }
+  ],
+  "image": "assets/projects/comic-vlm.svg"
+}

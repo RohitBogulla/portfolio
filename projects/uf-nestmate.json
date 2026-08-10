@@ -1,0 +1,12 @@
+{
+  "title": "UF-Nestmate",
+  "date": "2025-05-01",
+  "period": "Mar 2025 – May 2025",
+  "status": "live",
+  "description": "A full-stack data platform with a Go (Gin) REST backend, React/TypeScript frontend, and PostgreSQL, integrating a HuggingFace NLP pipeline that generates property descriptions from review data at scale. Shipped end-to-end with CI/CD on Vercel, holding 99.5% uptime for 500+ active users on a modular architecture built for independent component upgrades.",
+  "stack": ["Go", "Gin", "React", "TypeScript", "PostgreSQL", "HuggingFace", "Vercel"],
+  "links": [
+    { "label": "repository", "url": "https://github.com/Kamehamehaaaaa/UF-NestMate" }
+  ],
+  "images": "assets/projects/uf-nestmate.svg"
+}

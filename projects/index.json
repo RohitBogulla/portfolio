@@ -1,0 +1,155 @@
+[
+  {
+    "title": "JobSignal",
+    "date": "2026-05-01",
+    "period": "May 2026",
+    "status": "active",
+    "image": "assets/projects/jobsignal.svg",
+    "description": "A real-time email intelligence pipeline. Streams and classifies incoming signal with spaCy and a DistilBERT model, built on Kafka and Spark Structured Streaming, with MLflow for experiment tracking and Prometheus/Grafana for live observability. Containerized with Docker, CI via GitHub Actions.",
+    "stack": [
+      "Kafka",
+      "Spark Structured Streaming",
+      "spaCy",
+      "DistilBERT",
+      "MLflow",
+      "Prometheus",
+      "Grafana",
+      "Docker",
+      "GitHub Actions"
+    ],
+    "links": [
+      {
+        "label": "repository",
+        "url": "https://github.com/Kamehamehaaaaa/Jobsignal"
+      }
+    ]
+  },
+  {
+    "title": "CrimeLens",
+    "date": "2025-12-01",
+    "period": "Sep 2025 – Dec 2025",
+    "status": "complete",
+    "image": "assets/projects/crimelens.svg",
+    "description": "An end-to-end NLP-to-GNN pipeline for crime scene analysis. A production-grade spaCy NER/ingestion pipeline processes 100+ documents/second, converting free-text crime narratives into structured entity-event graphs; a 3-layer residual GCN classifies crime type across 8 categories at 92% test accuracy. Predictions surface through an interactive TypeScript dashboard with real-time graph visualization and GNNExplainer-style interpretability, optimized for sub-100ms inference.",
+    "stack": [
+      "spaCy",
+      "PyTorch Geometric",
+      "GCN",
+      "GNNExplainer",
+      "TypeScript",
+      "Streamlit"
+    ],
+    "links": [
+      {
+        "label": "repository",
+        "url": "https://github.com/Kamehamehaaaaa/CrimeLens"
+      }
+    ]
+  },
+  {
+    "title": "Protein Multi-Mutant Stability Ranking",
+    "date": "2025-12-01",
+    "period": "Sep 2025 – Dec 2025",
+    "status": "complete",
+    "image": "assets/projects/protein-multimutant.svg",
+    "description": "An ML surrogate model using XGBoost and Random Forest to predict protein stability changes (ΔΔG), enabling rapid screening of multi-mutant variants relevant to drug discovery and therapeutic development. A genetic algorithm for mutant space exploration outperformed a Monte Carlo baseline by 30% in convergence speed, validated with a batched FoldX physics-based structural verification pipeline.",
+    "stack": [
+      "XGBoost",
+      "Random Forest",
+      "Genetic Algorithm",
+      "FoldX"
+    ],
+    "links": [
+      {
+        "label": "repository",
+        "url": "https://github.com/Kamehamehaaaaa/protein-multimutant-ranking"
+      }
+    ]
+  },
+  {
+    "title": "Comic/Manga Page Interpretation via Vision-Language Models",
+    "date": "2025-05-01",
+    "period": "Jan 2025 – May 2025",
+    "status": "submitted to ACL 2025",
+    "image": "assets/projects/comic-vlm.svg",
+    "description": "An end-to-end pipeline making comics and manga accessible to visually impaired readers through screen-reader integration. Developed prompt-engineering strategies for VLMs that improved page-level comprehension accuracy by 40%, and benchmarked six vision-language models (MiniCPM, Qwen 2.5, LLaVA 1.6, InstructBLIP, CogVLM, Idefics3) on hallucination metrics.",
+    "stack": [
+      "PyTorch",
+      "HuggingFace Transformers",
+      "Prompt Engineering",
+      "VLMs",
+      "Python"
+    ],
+    "links": [
+      {
+        "label": "repository",
+        "url": "https://github.com/Kamehamehaaaaa/CAI6307-Second-Sight-Keystone-Project/tree/main"
+      },
+      {
+        "label": "paper",
+        "url": "https://arxiv.org/pdf/2603.01950"
+      }
+    ]
+  },
+  {
+    "title": "UF-Nestmate",
+    "date": "2025-05-01",
+    "period": "Mar 2025 – May 2025",
+    "status": "live",
+    "image": "",
+    "description": "A full-stack data platform with a Go (Gin) REST backend, React/TypeScript frontend, and PostgreSQL, integrating a HuggingFace NLP pipeline that generates property descriptions from review data at scale. Shipped end-to-end with CI/CD on Vercel, holding 99.5% uptime for 500+ active users on a modular architecture built for independent component upgrades.",
+    "stack": [
+      "Go",
+      "Gin",
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "HuggingFace",
+      "Vercel"
+    ],
+    "links": [
+      {
+        "label": "repository",
+        "url": "https://github.com/Kamehamehaaaaa/UF-NestMate"
+      }
+    ]
+  },
+  {
+    "title": "Protein 2D Structure Prediction",
+    "date": "2025-01-01",
+    "period": "2025",
+    "status": "complete",
+    "image": "assets/projects/protein-2d-structure.svg",
+    "description": "Hill Climbing optimization on a 2D Hydrophobic-Polar lattice model to predict low-energy protein folding conformations, using self-avoiding walk constraints and H-H contact energy minimization. Built energy convergence analysis, adaptive restart strategies, and lattice structure visualization for experimental comparison across HP sequences up to length 100.",
+    "stack": [
+      "Hill Climbing",
+      "HP Lattice Model",
+      "Optimization"
+    ],
+    "links": [
+      {
+        "label": "repository",
+        "url": "https://github.com/Kamehamehaaaaa/Protein-2D-Structure-Prediction"
+      }
+    ]
+  },
+  {
+    "title": "GraphAlgo",
+    "date": "2024-12-01",
+    "period": "Oct 2024 – Dec 2024",
+    "status": "complete",
+    "image": "assets/projects/graphalgo.svg",
+    "description": "Large-scale graph algorithm implementation in Java - connected components, cycle detection, and Dijkstra's shortest path and validated against the LiveJournal social network graph (2.3M nodes, 34M edges). Benchmarked time and memory performance across graph types at scale, producing structured simulation outputs across 10- to 1000-node configurations.",
+    "stack": [
+      "Java",
+      "Graph Algorithms",
+      "Dijkstra"
+    ],
+    "links": [
+      {
+        "label": "repository",
+        "url": "https://github.com/Kamehamehaaaaa/GraphAlgo"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "title": "GraphAlgo",
+  "date": "2024-12-01",
+  "period": "Oct 2024 – Dec 2024",
+  "status": "complete",
+  "description": "Large-scale graph algorithm implementation in Java - connected components, cycle detection, and Dijkstra's shortest path and validated against the LiveJournal social network graph (2.3M nodes, 34M edges). Benchmarked time and memory performance across graph types at scale, producing structured simulation outputs across 10- to 1000-node configurations.",
+  "stack": ["Java", "Graph Algorithms", "Dijkstra"],
+  "links": [
+    { "label": "repository", "url": "https://github.com/Kamehamehaaaaa/GraphAlgo" }
+  ],
+  "image": "assets/projects/graphalgo.svg"
+}

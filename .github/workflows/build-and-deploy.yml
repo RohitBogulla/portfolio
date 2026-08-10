@@ -1,0 +1,61 @@
+name: Build blog index and deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Regenerate posts/index.json from /posts/*.md
+        run: node scripts/build-blog-index.js
+
+      - name: Regenerate projects/index.json from /projects/*.json
+        run: node scripts/build-projects-index.js
+
+      - name: Commit generated indexes if they changed
+        run: |
+          if ! git diff --quiet -- posts/index.json projects/index.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add posts/index.json projects/index.json
+            git commit -m "chore: regenerate blog + project indexes [skip ci]"
+            git push
+          else
+            echo "No changes to generated indexes"
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

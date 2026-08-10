@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohit Bogulla — Software / ML Engineer</title>
+<meta name="description" content="Rohit Bogulla — software engineer working across distributed systems and applied ML.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <!-- ============ Sidebar ============ -->
+  <aside class="sidebar">
+    <div class="wordmark">~<span class="path-sep">/</span><strong>rohit</strong></div>
+
+    <a class="identity-home" href="/">
+      <div class="identity">
+        <div class="avatar-ring" id="sidebarAvatar">
+          <img src="assets/self.jpg" alt="Rohit Bogulla">
+          <!-- <div class="avatar-fallback">RB</div> -->
+        </div>
+        <h1>Rohit Bogulla</h1>
+        <p class="role">software engineer / agentic AI &amp; data systems</p>
+      </div>
+    </a>
+
+    <nav class="tabs" role="tablist" aria-label="Site sections">
+      <!-- <button role="tab" aria-selected="true" data-tab="home"><span class="idx">00</span> home</button> -->
+      <!-- <button role="tab" aria-selected="false" data-tab="about"><span class="idx">01</span> about</button>
+      <button role="tab" aria-selected="false" data-tab="projects"><span class="idx">02</span> projects</button>
+      <button role="tab" aria-selected="false" data-tab="blog"><span class="idx">03</span> blog</button>
+      <button role="tab" aria-selected="false" data-tab="resume"><span class="idx">04</span> resume</button>
+      <button role="tab" aria-selected="false" data-tab="contact"><span class="idx">05</span> contact</button> -->
+
+      <button role="tab" aria-selected="false" data-tab="about">about</button>
+      <button role="tab" aria-selected="false" data-tab="projects">projects</button>
+      <button role="tab" aria-selected="false" data-tab="blog">blog</button>
+      <button role="tab" aria-selected="false" data-tab="resume">resume</button>
+      <button role="tab" aria-selected="false" data-tab="contact">contact</button>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="socials" aria-label="Social links">
+        <a href="mailto:rbogulla@ufl.edu" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        </a>
+        <a href="https://github.com/Kamehamehaaaaa" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5a10.5 10.5 0 00-3.32 20.47c.53.1.72-.23.72-.5v-1.96c-2.92.63-3.54-1.28-3.54-1.28-.48-1.21-1.17-1.54-1.17-1.54-.96-.65.07-.64.07-.64 1.06.07 1.62 1.08 1.62 1.08.94 1.6 2.46 1.14 3.06.87.1-.68.37-1.14.67-1.4-2.33-.26-4.78-1.16-4.78-5.17 0-1.14.41-2.08 1.08-2.81-.11-.26-.47-1.32.1-2.75 0 0 .88-.28 2.88 1.07a10 10 0 015.24 0c2-1.35 2.88-1.07 2.88-1.07.57 1.43.21 2.49.1 2.75.67.73 1.08 1.67 1.08 2.81 0 4.02-2.46 4.9-4.8 5.16.38.33.72.97.72 1.96v2.9c0 .27.19.61.73.5A10.5 10.5 0 0012 1.5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/rohit-bogulla" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.01 5 2.5 2.5 0 01.01-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-.98 1.83-2 3.77-2 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.75c0-1.37-.02-3.14-1.94-3.14-1.94 0-2.24 1.5-2.24 3.05V21h-4V9z"/></svg>
+        </a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="dot" id="themeDot"></span>
+        <span id="themeLabel">dark mode</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ============ Main content ============ -->
+  <main id="main">
+
+    <!-- HOME -->
+    <section class="pane active" id="pane-home">
+      <div class="home-hero">
+        <div class="home-photo">
+          <img src="assets/self.jpg" alt="Rohit Bogulla">
+        </div>
+        <p class="home-line">Hey I'm Rohit. I love sea food and play chess like a maniac.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="pane" id="pane-about">
+      <p class="eyebrow">// about</p>
+      <h2>I build systems that move data reliably, then teach models to make sense of it.</h2>
+      <p>I'm a Machine Learning Engineer and Computer Science graduate student at the University of Florida, with 4+ years of industry experience at <strong>Oracle</strong> building and operating large-scale, production systems. I specialize in end-to-end AI systems — from research and model development to deployment, optimization, and monitoring in real-world environments.</p>
+      <p>My work spans Graph Neural Networks, NLP, Vision-Language Models, and LLM systems, with a strong emphasis on explainability, scalability, and performance. That ML work is grounded in years of building low-latency, high-throughput distributed systems at Oracle — which strongly informs how I design reliable, production-ready ML pipelines today, including a comic-accessibility project I submitted to ACL 2025.</p>
+      <p>I like the seam between backend engineering and ML — the same instincts that keep a Kafka pipeline reliable at 10M events a day are what make an inference pipeline trustworthy in production.</p>
+
+      <p class="eyebrow" style="margin-top:34px;">// experience</p>
+
+      <div class="exp-list">
+        <div class="exp-entry">
+          <div class="exp-marker"></div>
+          <div class="exp-body">
+            <h3 class="exp-role">AI Engineer</h3>
+            <p class="exp-org">University of Florida</p>
+            <p class="exp-meta">Gainesville, FL</p>
+            <p class="exp-dates">May 2025 – present</p>
+            <ul class="exp-bullets">
+              <li>Designed an agentic research platform on LangChain, LangGraph, and GPT-4 with RAG-based retrieval across 10+ biodiversity databases — serving 1,000+ daily users at ~200ms latency (ichatbio.org)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-entry">
+          <div class="exp-marker"></div>
+          <div class="exp-body">
+            <h3 class="exp-role">Software Engineer</h3>
+            <p class="exp-org">Oracle</p>
+            <p class="exp-meta">Oracle BRM — Billing, Subscription Manager, Rating</p>
+            <p class="exp-dates">Aug 2022 – Jul 2024</p>
+            <ul class="exp-bullets">
+              <li>Improved transaction performance 20% across 10M+ daily billing operations through opcode-level refactoring</li>
+              <li>Designed real-time data pipelines on Kafka and Spark Streaming, processing 10M+ events/day at sub-second latency</li>
+              <li>Built multi-tenant data partitioning tools for Oracle BRM, cutting query latency 35%</li>
+              <li>Led a zero-downtime migration of core subscription and rating components from BRM 12 to BRM 15</li>
+              <li>Implemented OAuth2 authentication and RBAC, securing enterprise billing infrastructure</li>
+            </ul>
+            <p class="exp-tech">C · C++ · Java · Python · PL/SQL · Kafka · Spark · Kubernetes · OCI</p>
+          </div>
+        </div>
+
+        <div class="exp-entry compact">
+          <div class="exp-marker"></div>
+          <div class="exp-body">
+            <div class="exp-compact-row">
+              <span class="tl-role">Associate Software Engineer</span>
+              <span class="tl-org">Oracle</span>
+              <span class="tl-date">Sep 2020 – Aug 2022</span>
+            </div>
+            <p class="exp-meta">Built and shipped REST APIs for Oracle DX4C, integrating Pricing Design Center with downstream billing systems</p>
+          </div>
+        </div>
+
+        <div class="exp-entry compact">
+          <div class="exp-marker"></div>
+          <div class="exp-body">
+            <div class="exp-compact-row">
+              <span class="tl-role">Software Engineer Intern</span>
+              <span class="tl-org">GoTo Technologies (LogMeIn)</span>
+              <span class="tl-date">Jan – Sep 2020</span>
+            </div>
+            <p class="exp-meta">Built Nucleus, a rapid deployment framework for microservices and Lambdas, adopted across two production products</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="eyebrow" style="margin-top:34px;">// skills</p>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <p class="skill-group-label">languages</p>
+          <ul class="stack-list">
+            <li>Python</li><li>Java</li><li>C</li><li>C++</li><li>Go</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">agentic ai &amp; ml</p>
+          <ul class="stack-list">
+            <li>LangChain</li><li>LangGraph</li><li>RAG</li><li>GPT-4</li><li>PyTorch</li><li>HuggingFace Transformers</li><li>PyTorch Geometric</li><li>spaCy</li><li>Prompt Engineering</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">data &amp; streaming</p>
+          <ul class="stack-list">
+            <li>Apache Kafka</li><li>Spark</li><li>MLflow</li><li>PostgreSQL</li><li>Redis</li><li>ChromaDB</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">cloud &amp; devops</p>
+          <ul class="stack-list">
+            <li>AWS</li><li>OCI</li><li>Docker</li><li>Kubernetes</li><li>Jenkins</li><li>GitHub Actions</li><li>CI/CD</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">observability &amp; qa</p>
+          <ul class="stack-list">
+            <li>Prometheus</li><li>Grafana</li><li>Wavefront</li><li>Istio</li><li>DeepEval</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="pane" id="pane-projects">
+      <p class="eyebrow">// projects</p>
+      <h2>Selected work</h2>
+      <div class="project-grid" id="projectGrid"></div>
+      <p class="empty-note" id="projectsEmptyNote" hidden>No projects listed yet.</p>
+    </section>
+
+    <!-- BLOG -->
+    <section class="pane" id="pane-blog">
+      <p class="eyebrow">// blog</p>
+      <h2>Writing</h2>
+      <div id="blogListView">
+        <div class="post-list" id="postList"></div>
+        <p class="empty-note" id="emptyNote" hidden>No posts yet. New writing shows up here automatically — see /posts in the repo for how it works.</p>
+      </div>
+      <div id="blogPostView" hidden>
+        <button class="post-back" id="backToList">← back to writing</button>
+        <p class="post-meta" id="postMeta"></p>
+        <div class="post-body" id="postBody"></div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="pane" id="pane-resume">
+      <p class="eyebrow">// resume</p>
+      <h2>Resume</h2>
+      <p>M.S. Computer Science, University of Florida (GPA 4.00, May 2026). 4+ years of industry experience at Oracle building large-scale production systems, currently applied to AI Engineering research at UF.</p>
+      <p><a href="assets/rohit-bogulla-resume.pdf" class="inline-link" target="_blank" rel="noopener">Download PDF →</a></p>
+      <p style="font-size: 12.5px; color: var(--text-faint);">Drop the actual file at <code style="font-family: var(--mono);">assets/rohit-bogulla-resume.pdf</code> to wire this up.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="pane" id="pane-contact">
+      <p class="eyebrow">// contact</p>
+      <h2>Get in touch</h2>
+      <p>Open to software engineering and ML engineering roles. The fastest way to reach me is email.</p>
+      <ul class="contact-list">
+        <li><span class="label">email</span> <a href="mailto:rbogulla@ufl.edu">rbogulla@ufl.edu</a></li>
+        <li><span class="label">github</span> <a href="https://github.com/Kamehamehaaaaa" target="_blank" rel="noopener">github.com/Kamehamehaaaaa</a></li>
+        <li><span class="label">linkedin</span> <a href="https://www.linkedin.com/in/rohit-bogulla" target="_blank" rel="noopener">linkedin.com/in/rohit-bogulla</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ============ Status bar ============ -->
+  <div class="statusbar">
+    <div class="seg"><span class="pulse"></span> open to opportunities</div>
+    <div class="statusbar-right">
+      <span id="clockSeg">local time —</span>
+      <!-- <span>UTF-8</span> -->
+      <span>visitors <span id="visitor-count">0</span></span>
+      <span>built with markdown</span>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

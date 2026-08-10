@@ -1,0 +1,12 @@
+---
+title: Your Post Title
+date: 2026-08-07
+---
+
+Write your post here in normal markdown. Headings, `code`, **bold**,
+[links](https://example.com), lists — all supported.
+
+To publish: copy this file, rename it to something like
+`2026-08-07-your-post-title.md` (must end in .md), edit the frontmatter
+and body, then commit and push. The site rebuilds the post list
+automatically — nothing else to touch.

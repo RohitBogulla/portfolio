@@ -1,0 +1,12 @@
+{
+  "title": "JobSignal",
+  "date": "2026-05-01",
+  "period": "May 2026",
+  "status": "active",
+  "description": "A real-time email intelligence pipeline. Streams and classifies incoming signal with spaCy and a DistilBERT model, built on Kafka and Spark Structured Streaming, with MLflow for experiment tracking and Prometheus/Grafana for live observability. Containerized with Docker, CI via GitHub Actions.",
+  "stack": ["Kafka", "Spark Structured Streaming", "spaCy", "DistilBERT", "MLflow", "Prometheus", "Grafana", "Docker", "GitHub Actions"],
+  "links": [
+    { "label": "repository", "url": "https://github.com/Kamehamehaaaaa/Jobsignal" }
+  ],
+  "image": "assets/projects/jobsignal.svg"
+}

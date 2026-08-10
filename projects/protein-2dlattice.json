@@ -1,0 +1,12 @@
+{
+  "title": "Protein 2D Structure Prediction",
+  "date": "2025-01-01",
+  "period": "2025",
+  "status": "complete",
+  "description": "Hill Climbing optimization on a 2D Hydrophobic-Polar lattice model to predict low-energy protein folding conformations, using self-avoiding walk constraints and H-H contact energy minimization. Built energy convergence analysis, adaptive restart strategies, and lattice structure visualization for experimental comparison across HP sequences up to length 100.",
+  "stack": ["Hill Climbing", "HP Lattice Model", "Optimization"],
+  "links": [
+    { "label": "repository", "url": "https://github.com/Kamehamehaaaaa/Protein-2D-Structure-Prediction" }
+  ],
+  "image": "assets/projects/protein-2d-structure.svg"
+}

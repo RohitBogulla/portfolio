@@ -1,0 +1,12 @@
+{
+  "title": "CrimeLens",
+  "date": "2025-12-01",
+  "period": "Sep 2025 – Dec 2025",
+  "status": "complete",
+  "description": "An end-to-end NLP-to-GNN pipeline for crime scene analysis. A production-grade spaCy NER/ingestion pipeline processes 100+ documents/second, converting free-text crime narratives into structured entity-event graphs; a 3-layer residual GCN classifies crime type across 8 categories at 92% test accuracy. Predictions surface through an interactive TypeScript dashboard with real-time graph visualization and GNNExplainer-style interpretability, optimized for sub-100ms inference.",
+  "stack": ["spaCy", "PyTorch Geometric", "GCN", "GNNExplainer", "TypeScript", "Streamlit"],
+  "links": [
+    { "label": "repository", "url": "https://github.com/Kamehamehaaaaa/CrimeLens" }
+  ],
+  "image": "assets/projects/crimelens.svg"
+}

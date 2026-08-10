@@ -1,0 +1,42 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#24413c"/>
+      <stop offset="55%" stop-color="#1c2027"/>
+      <stop offset="100%" stop-color="#1b1e24"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#dots)"/>
+
+  <text x="30" y="46" font-family="JetBrains Mono, monospace" font-size="16" letter-spacing="1.5" fill="#9198a6">// protein · ddg ranking</text>
+
+  <!-- helix ribbon -->
+  <g stroke="#5eead4" stroke-width="2.5" fill="none" opacity="0.9">
+    <path d="M120 200 C 200 120, 280 280, 360 200 C 440 120, 520 280, 600 200 C 650 160, 670 180, 690 200"/>
+  </g>
+  <g stroke="#3a7e73" stroke-width="2.5" fill="none" opacity="0.55">
+    <path d="M120 250 C 200 330, 280 170, 360 250 C 440 330, 520 170, 600 250 C 650 290, 670 270, 690 250"/>
+  </g>
+  <!-- rungs connecting the two strands -->
+  <g stroke="#333844" stroke-width="1.5">
+    <line x1="160" y1="176" x2="160" y2="272"/>
+    <line x1="250" y1="240" x2="250" y2="212"/>
+    <line x1="320" y1="176" x2="320" y2="272"/>
+    <line x1="400" y1="240" x2="400" y2="212"/>
+    <line x1="470" y1="176" x2="470" y2="272"/>
+    <line x1="550" y1="240" x2="550" y2="212"/>
+    <line x1="620" y1="176" x2="620" y2="272"/>
+  </g>
+
+  <!-- mutation markers -->
+  <g>
+    <circle cx="250" cy="226" r="9" fill="#d9a566"/>
+    <circle cx="470" cy="224" r="9" fill="#d9a566"/>
+    <circle cx="620" cy="224" r="9" fill="#d9a566"/>
+  </g>
+  <text x="230" y="320" font-family="JetBrains Mono, monospace" font-size="11" fill="#5c6373">multi-mutant variants</text>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "title": "Protein Multi-Mutant Stability Ranking",
+  "date": "2025-12-01",
+  "period": "Sep 2025 – Dec 2025",
+  "status": "complete",
+  "description": "An ML surrogate model using XGBoost and Random Forest to predict protein stability changes (ΔΔG), enabling rapid screening of multi-mutant variants relevant to drug discovery and therapeutic development. A genetic algorithm for mutant space exploration outperformed a Monte Carlo baseline by 30% in convergence speed, validated with a batched FoldX physics-based structural verification pipeline.",
+  "stack": ["XGBoost", "Random Forest", "Genetic Algorithm", "FoldX"],
+  "links": [
+    { "label": "repository", "url": "https://github.com/Kamehamehaaaaa/protein-multimutant-ranking" }
+  ],
+  "image": "assets/projects/protein-multimutant.svg"
+}

@@ -1,0 +1,49 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#24413c"/>
+      <stop offset="55%" stop-color="#1c2027"/>
+      <stop offset="100%" stop-color="#1b1e24"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#dots)"/>
+
+  <text x="30" y="46" font-family="JetBrains Mono, monospace" font-size="16" letter-spacing="1.5" fill="#9198a6">// fullstack · go + react</text>
+
+  <!-- browser frame -->
+  <g>
+    <rect x="120" y="120" width="560" height="260" rx="8" fill="#22262e" stroke="#333844" stroke-width="1.5"/>
+    <rect x="120" y="120" width="560" height="32" rx="8" fill="#262b34"/>
+    <circle cx="140" cy="136" r="4" fill="#5c6373"/>
+    <circle cx="156" cy="136" r="4" fill="#5c6373"/>
+    <circle cx="172" cy="136" r="4" fill="#5c6373"/>
+  </g>
+
+  <!-- listing cards -->
+  <g>
+    <rect x="145" y="170" width="150" height="95" rx="6" fill="#1b1e24" stroke="#333844"/>
+    <rect x="145" y="170" width="150" height="55" rx="6" fill="#2a3f3d"/>
+    <line x1="155" y1="238" x2="255" y2="238" stroke="#5c6373" stroke-width="3" stroke-linecap="round"/>
+    <line x1="155" y1="250" x2="215" y2="250" stroke="#5eead4" stroke-width="3" stroke-linecap="round"/>
+
+    <rect x="310" y="170" width="150" height="95" rx="6" fill="#1b1e24" stroke="#333844"/>
+    <rect x="310" y="170" width="150" height="55" rx="6" fill="#3a3226"/>
+    <line x1="320" y1="238" x2="420" y2="238" stroke="#5c6373" stroke-width="3" stroke-linecap="round"/>
+    <line x1="320" y1="250" x2="380" y2="250" stroke="#d9a566" stroke-width="3" stroke-linecap="round"/>
+
+    <rect x="475" y="170" width="150" height="95" rx="6" fill="#1b1e24" stroke="#333844"/>
+    <rect x="475" y="170" width="150" height="55" rx="6" fill="#243a44"/>
+    <line x1="485" y1="238" x2="585" y2="238" stroke="#5c6373" stroke-width="3" stroke-linecap="round"/>
+    <line x1="485" y1="250" x2="545" y2="250" stroke="#5eead4" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- generated-description sparkle -->
+  <g fill="#d9a566">
+    <path d="M400 300 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z"/>
+  </g>
+  <text x="425" y="308" font-family="JetBrains Mono, monospace" font-size="11" fill="#5c6373">nlp-generated copy</text>
+</svg>
