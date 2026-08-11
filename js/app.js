@@ -210,28 +210,52 @@ async function loadProjects() {
 
 loadProjects();
 
-async function visitorCount() {
-  const namespace = "honeywalnutshrimp";
-  const key = "visits";
-  const url = `https://rohit.com`
+function getSessionId() {
+  let sid = localStorage.getItem("visitor-sid");
+  if (!sid) {
+    sid = crypto.randomUUID();
+    localStorage.setItem("visitor-sid", sid);
+  }
+  return sid;
+}
 
-  if (!sessionStorage.getItem("has_visited")) {
-    
-    fetch(`${url}{namespace}/${key}`)
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById("visitor-count").innerText = data.value;
-        sessionStorage.setItem("has_visited", "true");
-      });
-      
-  } else {
-    
-    fetch(`${url}{namespace}/${key}`)
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById("visitor-count").innerText = data.value;
-      });
+async function visitorCount() {
+  const key = "rohit-portfolio";
+  const url = "https://apicount.vercel.app";
+
+  try {
+    const res = await fetch(`${url}/hit/${key}`, {
+      headers: { "Session-Id": getSessionId() }
+    });
+    if (!res.ok) throw new Error(`Request failed: ${res.status}`);
+    const data = await res.json();
+    document.getElementById("visitor-count").innerText = data.visits;
+  } catch (err) {
+    console.error("Visitor count failed:", err);
   }
 }
+
+// async function visitorCount() {
+//   const key = "rohit-portfolio";
+//   const url = `https://apicount-odpxs98h2-kamehamehaaaaas-projects.vercel.app`
+
+//   if (!sessionStorage.getItem("has_visited")) {
+    
+//     fetch(`${url}/hit/${key}`)
+//       .then(res => res.json())
+//       .then(data => {
+//         document.getElementById("visitor-count").innerText = data.value;
+//         sessionStorage.setItem("has_visited", "true");
+//       });
+      
+//   } else {
+    
+//     fetch(`${url}/hit/${key}`)
+//       .then(res => res.json())
+//       .then(data => {
+//         document.getElementById("visitor-count").innerText = data.value;
+//       });
+//   }
+// }
 
 document.addEventListener("DOMContentLoaded", visitorCount);
