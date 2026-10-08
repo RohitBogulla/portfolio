@@ -17,7 +17,7 @@
   const SUGGESTIONS = [
     "What did Rohit work on at Oracle?",
     "What's his experience with agentic AI?",
-    "Which projects use Kafka or Spark?",
+    "What projects has Rohit built outside of work?",
     "What is he looking for next?",
   ];
 
