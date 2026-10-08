@@ -218,19 +218,26 @@
   }
 
   function renderMarkdown(text) {
-    if (window.marked && window.DOMPurify) {
-      return window.DOMPurify.sanitize(window.marked.parse(text), {
+  // Turn inline • bullets into separate Markdown list items.
+  const formatted = text
+    .replace(/[ \t]*•[ \t]*/g, "\n\n- ")
+    .trim();
+
+  if (window.marked && window.DOMPurify) {
+    return window.DOMPurify.sanitize(
+      window.marked.parse(formatted),
+      {
         FORBID_TAGS: [
           "img", "style", "form", "input", "button", "iframe",
         ],
-      });
-    }
-
-    const div = document.createElement("div");
-    div.textContent = text;
-
-    return div.innerHTML.replace(/\n/g, "<br>");
+      }
+    );
   }
+
+  const div = document.createElement("div");
+  div.textContent = formatted;
+  return div.innerHTML.replace(/\n/g, "<br>");
+}
 
   function scrollToBottom() {
     log.scrollTop = log.scrollHeight;

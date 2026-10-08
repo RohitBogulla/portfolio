@@ -271,3 +271,25 @@
   .chat-typing span { animation: none; opacity: .6; }
   .chat-log { scroll-behavior: auto; }
 }
+
+.chat-msg.bot p {
+  margin: 0 0 0.75rem;
+}
+
+.chat-msg.bot ul {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+}
+
+.chat-msg.bot li {
+  margin-bottom: 0.65rem;
+  line-height: 1.55;
+}
+
+.chat-msg.bot > :last-child {
+  margin-bottom: 0;
+}
+
+.chat-msg.bot a {
+  overflow-wrap: anywhere;
+}
